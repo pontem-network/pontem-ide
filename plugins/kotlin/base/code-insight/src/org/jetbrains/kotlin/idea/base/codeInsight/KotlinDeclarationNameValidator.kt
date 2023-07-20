@@ -39,14 +39,17 @@ class KotlinDeclarationNameValidator(
     override fun invoke(name: String): Boolean {
         val identifier = Name.identifier(name)
 
-        if (analysisSession.hasConflict(identifier)) return false
+        with(analysisSession) {
+            if (hasConflict(identifier)) return false
+        }
 
         return checkDeclarationsIn.none { declaration ->
             declaration.findDescendantOfType<KtNamedDeclaration> { it.isConflicting(identifier) } != null
         }
     }
 
-    private fun KtAnalysisSession.hasConflict(identifier: Name): Boolean {
+    context(KtAnalysisSession)
+    private fun hasConflict(identifier: Name): Boolean {
         return when(target) {
             KotlinNameSuggestionProvider.ValidatorTarget.PROPERTY, KotlinNameSuggestionProvider.ValidatorTarget.VARIABLE, KotlinNameSuggestionProvider.ValidatorTarget.PARAMETER -> {
                 val scope =
