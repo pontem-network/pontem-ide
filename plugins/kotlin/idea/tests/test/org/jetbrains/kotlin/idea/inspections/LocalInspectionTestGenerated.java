@@ -16822,6 +16822,11 @@ public abstract class LocalInspectionTestGenerated extends AbstractLocalInspecti
             runTest("testData/inspectionsLocal/unusedSymbol/inAnonymousRunWrapped.kt");
         }
 
+        @TestMetadata("infixCall.kt")
+        public void testInfixCall() throws Exception {
+            runTest("testData/inspectionsLocal/unusedSymbol/infixCall.kt");
+        }
+
         @TestMetadata("inlineClassConstructor.kt")
         public void testInlineClassConstructor() throws Exception {
             runTest("testData/inspectionsLocal/unusedSymbol/inlineClassConstructor.kt");
