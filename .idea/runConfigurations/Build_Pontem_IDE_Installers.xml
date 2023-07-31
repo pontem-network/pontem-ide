@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Build Pontem IDE Installers" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="PontemIdeInstallersBuildTarget" />
+    <module name="pontem.ide.build" />
+    <shortenClasspath name="ARGS_FILE" />
+    <option name="VM_PARAMETERS" value="-Dintellij.build.use.compiled.classes=true -Dintellij.build.target.os=current" />
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="intellij-move generateLexer / generateParser" run_configuration_type="GradleRunConfiguration" />
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="intellij-move [resolveDependencies]" run_configuration_type="GradleRunConfiguration" />
+      <option name="MakeProject" enabled="true" />
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="" />
+    </method>
+  </configuration>
+</component>
