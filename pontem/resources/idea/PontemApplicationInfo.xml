@@ -1,0 +1,20 @@
+<component xmlns="http://jetbrains.org/intellij/schema/application-info"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://jetbrains.org/intellij/schema/application-info http://jetbrains.org/intellij/schema/ApplicationInfo.xsd">
+
+  <version major="2023" minor="2"/>
+  <company name="Pontem" url="https://pontem.network"/>
+  <build number="PC-__BUILD__" date="__BUILD_DATE__" majorReleaseDate="20230726"/>
+  <logo url="/PontemSplash.png" />
+  <!--<about url="/pycharm_core_about.png" logoX="540" logoY="300" logoW="100" logoH="100" foreground="ffffff"-->
+  <!--       copyrightForeground="ffffff" linkColor="589bf2"/>-->
+  <icon ico="pontem-48x48.ico" svg="/pontem.svg" svg-small="/pontem16.svg"/>
+
+  <names product="Pontem IDE" script="pontem-ide" motto="Pontem Move IDE"/>
+
+  <!--<essential-plugin>org.move.lang</essential-plugin>-->
+
+  <!--<welcome-screen logo-url="/PontemSplash.png" />-->
+  <plugins url="https://plugins.jetbrains.com/"/>
+
+</component>

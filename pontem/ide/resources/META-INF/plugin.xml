@@ -1,0 +1,13 @@
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <id>pontem.ide.customization</id>
+  <name>Pontem IDE Customization</name>
+  <!--suppress PluginXmlValidity -->
+  <vendor>Pontem</vendor>
+  <description>Provides customization for the Pontem IDE.</description>
+  <!--<resource-bundle>messages.ActionsBundle</resource-bundle>-->
+
+  <!--<incompatible-with>com.intellij.modules.appcode.ide</incompatible-with>-->
+
+  <xi:include href="/META-INF/pontem-ide-customization.xml"/>
+
+</idea-plugin>
