@@ -13,7 +13,6 @@
     <orderEntry type="library" name="kotlinx-coroutines-core" level="project" />
     <orderEntry type="module" module-name="intellij.platform.buildScripts" />
     <orderEntry type="module" module-name="intellij.platform.buildScripts.downloader" />
-    <orderEntry type="module" module-name="pontem.ide.main" />
     <orderEntry type="module" module-name="intellij.platform.util" />
   </component>
 </module>

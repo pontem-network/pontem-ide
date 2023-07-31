@@ -12,7 +12,8 @@
 
   <names product="Pontem IDE" script="pontem-ide" motto="Pontem Move IDE"/>
 
-  <!--<essential-plugin>org.move.lang</essential-plugin>-->
+  <essential-plugin>pontem.ide.customization</essential-plugin>
+  <essential-plugin>org.move.lang</essential-plugin>
 
   <!--<welcome-screen logo-url="/PontemSplash.png" />-->
   <plugins url="https://plugins.jetbrains.com/"/>

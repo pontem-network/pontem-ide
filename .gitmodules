@@ -1,0 +1,4 @@
+[submodule "intellij-move"]
+	path = intellij-move
+	url = https://github.com/pontem-network/intellij-move
+	branch = master

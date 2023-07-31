@@ -33,29 +33,29 @@ class PontemIdeProperties(communityHome: Path) : ProductProperties() {
     brandingResourcePaths = listOf(communityHome.resolve("pontem/resources"))
     customJvmMemoryOptions = persistentMapOf("-Xms" to "256m", "-Xmx" to "1500m")
     scrambleMainJar = false
-    buildSourcesArchive = true
+    buildSourcesArchive = false
 
     /* main module for JetBrains Client isn't available in the intellij-community project,
    so this property is set only when PyCharm Community is built from the intellij-ultimate project. */
     embeddedJetBrainsClientMainModule = null
 
-    productLayout.mainModules = listOf("pontem.ide.main")
+    productLayout.mainModules = listOf("pontem.ide")
     //productLayout.mainModules = listOf("intellij.pycharm.community.main")
-    productLayout.productApiModules = listOf("intellij.xml.dom")
+    //productLayout.productApiModules = listOf("intellij.xml.dom")
     productLayout.productImplementationModules = listOf(
       "intellij.platform.main",
       "intellij.xml.dom.impl",
-      //"pontem.ide",
+      "pontem.ide",
     )
     productLayout.bundledPluginModules = mutableListOf(
       "intellij.platform.images",
-      "intellij.toml",
+      //"intellij.toml",
       //"pontem.ide.customization"
     )
     //productLayout.bundledPluginModules.add("intellij.python.community.plugin")
-    //productLayout.bundledPluginModules.add("intellij.toml")
-    //productLayout.bundledPluginModules.add("pontem.ide.customization")
-    //productLayout.bundledPluginModules.add("intellij-move.plugin")
+    productLayout.bundledPluginModules.add("intellij.toml")
+    productLayout.bundledPluginModules.add("pontem.ide.customization")
+    productLayout.bundledPluginModules.add("intellij-move.plugin")
     //productLayout.bundledPluginModules.add("intellij.pycharm.community.customization")
     //productLayout.bundledPluginModules.addAll(
     //  Files.readAllLines(communityHome.resolve("pontem/build/bundled-plugin-list.txt")))
@@ -63,9 +63,17 @@ class PontemIdeProperties(communityHome: Path) : ProductProperties() {
     //productLayout.pluginLayouts = CommunityRepositoryModules.COMMUNITY_REPOSITORY_PLUGINS
     productLayout.pluginLayouts =
       persistentListOf(
-        PluginLayout.plugin("intellij.toml"),
-        //PluginLayout.plugin("pontem.ide.customization"),
-        //PluginLayout.plugin("intellij-move.plugin")
+        PluginLayout.plugin("intellij.json"),
+        PluginLayout.plugin(listOf("intellij.toml", "intellij.toml.core", "intellij.toml.json")),
+        PluginLayout.plugin(listOf(
+          "pontem.ide.customization",
+          "pontem.ide.impl",
+          "intellij-move.main"
+        )),
+        PluginLayout.plugin(listOf(
+          "intellij-move.plugin",
+          "intellij-move.main",
+        ))
       )
     //productLayout.pluginLayouts = CommunityRepositoryModules.COMMUNITY_REPOSITORY_PLUGINS.add(
     //  PluginLayout.plugin(listOf(

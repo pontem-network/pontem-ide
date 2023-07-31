@@ -3,8 +3,9 @@ package ide;
 
 import com.intellij.lang.IdeLanguageCustomization;
 import com.intellij.lang.Language;
+import com.intellij.util.containers.ContainerUtil;
 import org.jetbrains.annotations.NotNull;
-import org.move.lang.MoveLanguage;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Collections;
 import java.util.List;
@@ -13,6 +14,11 @@ public class PontemIdeLanguageCustomization extends IdeLanguageCustomization {
   @NotNull
   @Override
   public List<Language> getPrimaryIdeLanguages() {
-    return Collections.singletonList(MoveLanguage.INSTANCE);
+    return ContainerUtil.createMaybeSingletonList(findMoveLanguageByID());
+  }
+
+  @Nullable
+  private static Language findMoveLanguageByID() {
+    return Language.findLanguageByID("Move");
   }
 }
