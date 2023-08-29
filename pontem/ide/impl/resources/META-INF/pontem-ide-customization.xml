@@ -8,7 +8,7 @@
     <!--<applicationInitializedListener implementation="com.intellij.internal.statistic.updater.StatisticsStateCollectorsScheduler"/>-->
     <!--<postStartupActivity implementation="com.intellij.internal.statistic.updater.StatisticsStateCollectorsScheduler$MyStartupActivity"/>-->
 
-    <!--<projectViewPane implementation="com.intellij.ide.projectView.impl.ProjectViewPane"/>-->
+    <projectViewPane implementation="ide.PontemProjectViewPane"/>
 
 
     <!--<gotoRelatedProvider implementation="com.intellij.testIntegration.GotoTestRelatedProvider"/>-->

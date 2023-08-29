@@ -8,12 +8,12 @@
   <logo url="/PontemSplash.png" />
   <!--<about url="/pycharm_core_about.png" logoX="540" logoY="300" logoW="100" logoH="100" foreground="ffffff"-->
   <!--       copyrightForeground="ffffff" linkColor="589bf2"/>-->
-  <icon ico="pontem.ico" svg="/pontem.svg" svg-small="/pontem16.svg"/>
+  <icon ico="pontem16.ico" svg="/pontem-icon-64x64.svg" svg-small="/pontem16.svg"/>
 
-  <names product="Pontem IDE" script="pontem-ide" motto="Pontem Move IDE"/>
+  <names product="Pontem IDE" script="pontem" motto="Pontem IDE for Aptos"/>
 
-  <essential-plugin>pontem.ide.customization</essential-plugin>
-  <essential-plugin>org.move.lang</essential-plugin>
+  <!--<essential-plugin>pontem.ide.customization</essential-plugin>-->
+  <!--<essential-plugin>org.move.lang</essential-plugin>-->
 
   <!--<welcome-screen logo-url="/PontemSplash.png" />-->
   <plugins url="https://plugins.jetbrains.com/"/>

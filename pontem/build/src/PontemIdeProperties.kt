@@ -1,6 +1,5 @@
 // Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license.
 
-import kotlinx.collections.immutable.persistentListOf
 import kotlinx.collections.immutable.persistentMapOf
 import org.jetbrains.intellij.build.*
 import org.jetbrains.intellij.build.impl.PluginLayout
@@ -31,7 +30,7 @@ class PontemIdeProperties(communityHome: Path) : ProductProperties() {
     platformPrefix = "Pontem"
     applicationInfoModule = "pontem.ide"
     brandingResourcePaths = listOf(communityHome.resolve("pontem/resources"))
-    customJvmMemoryOptions = persistentMapOf("-Xms" to "256m", "-Xmx" to "1500m")
+    customJvmMemoryOptions = persistentMapOf("-Xms" to "512m", "-Xmx" to "4096m")
     scrambleMainJar = false
     buildSourcesArchive = false
 
@@ -44,6 +43,7 @@ class PontemIdeProperties(communityHome: Path) : ProductProperties() {
     //productLayout.productApiModules = listOf("intellij.xml.dom")
     productLayout.productImplementationModules = listOf(
       "intellij.platform.main",
+      "intellij.platform.lang.impl",
       "intellij.xml.dom.impl",
       "pontem.ide",
     )
@@ -55,26 +55,32 @@ class PontemIdeProperties(communityHome: Path) : ProductProperties() {
     //productLayout.bundledPluginModules.add("intellij.python.community.plugin")
     productLayout.bundledPluginModules.add("intellij.toml")
     productLayout.bundledPluginModules.add("pontem.ide.customization")
-    productLayout.bundledPluginModules.add("intellij-move.plugin")
+    //productLayout.bundledPluginModules.add("intellij-move.plugin")
     //productLayout.bundledPluginModules.add("intellij.pycharm.community.customization")
-    //productLayout.bundledPluginModules.addAll(
-    //  Files.readAllLines(communityHome.resolve("pontem/build/bundled-plugin-list.txt")))
+    productLayout.bundledPluginModules.addAll(
+      Files.readAllLines(communityHome.resolve("pontem/build/bundled-plugin-list.txt")))
 
-    //productLayout.pluginLayouts = CommunityRepositoryModules.COMMUNITY_REPOSITORY_PLUGINS
-    productLayout.pluginLayouts =
-      persistentListOf(
-        PluginLayout.plugin("intellij.json"),
-        PluginLayout.plugin(listOf("intellij.toml", "intellij.toml.core", "intellij.toml.json")),
-        PluginLayout.plugin(listOf(
-          "pontem.ide.customization",
-          "pontem.ide.impl",
-          "intellij-move.main"
-        )),
-        PluginLayout.plugin(listOf(
-          "intellij-move.plugin",
-          "intellij-move.main",
-        ))
-      )
+    productLayout.pluginLayouts = CommunityRepositoryModules.COMMUNITY_REPOSITORY_PLUGINS
+      //.add(PluginLayout.plugin(listOf("intellij.toml", "intellij.toml.core", "intellij.toml.json")))
+      .add(PluginLayout.plugin(listOf(
+        "pontem.ide.customization",
+        "pontem.ide.impl",
+        "intellij-move.main"
+      )))
+    //productLayout.pluginLayouts =
+    //  persistentListOf(
+    //    PluginLayout.plugin("intellij.json"),
+    //    PluginLayout.plugin(listOf("intellij.toml", "intellij.toml.core", "intellij.toml.json")),
+    //    PluginLayout.plugin(listOf(
+    //      "pontem.ide.customization",
+    //      "pontem.ide.impl",
+    //      "intellij-move.main"
+    //    )),
+    //    //PluginLayout.plugin(listOf(
+    //    //  "intellij-move.plugin",
+    //    //  "intellij-move.main",
+    //    //))
+    //  )
     //productLayout.pluginLayouts = CommunityRepositoryModules.COMMUNITY_REPOSITORY_PLUGINS.add(
     //  PluginLayout.plugin(listOf(
     //    "pontem.ide.customization",
