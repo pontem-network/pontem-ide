@@ -8,6 +8,8 @@
       <excludeFolder url="file://$MODULE_DIR$/system" />
       <excludeFolder url="file://$MODULE_DIR$/docs/plugin-graph/dist" />
       <excludeFolder url="file://$MODULE_DIR$/docs/dist-visualizer/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/intellij-move/build/resources/test/move_toml_project/build" />
+      <excludeFolder url="file://$MODULE_DIR$/intellij-move/src/test/resources/move_toml_project/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

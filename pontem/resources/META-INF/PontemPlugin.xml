@@ -1,0 +1,10 @@
+<!-- Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. -->
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="/META-INF/PlatformLangPlugin.xml" />
+  <xi:include href="/META-INF/XmlPlugin.xml" />
+
+  <!--<xi:include href="/META-INF/images-plugin.xml" />-->
+  <!--<xi:include href="/META-INF/toml-plugin.xml" />-->
+  <!--<xi:include href="/META-INF/move-co" />-->
+  <!--<xi:include href="/META-INF/pontem-ide-customization.xml" />-->
+</idea-plugin>

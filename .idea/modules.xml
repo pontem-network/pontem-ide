@@ -370,6 +370,8 @@
       <module fileurl="file://$PROJECT_DIR$/android/android/prebuilts/sdktools/android.sdktools.wizardTemplate.impl.iml" filepath="$PROJECT_DIR$/android/android/prebuilts/sdktools/android.sdktools.wizardTemplate.impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/android/android/prebuilts/sdktools/android.sdktools.wizardTemplate.plugin.iml" filepath="$PROJECT_DIR$/android/android/prebuilts/sdktools/android.sdktools.wizardTemplate.plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/android/android/prebuilts/sdktools/android.sdktools.zipflinger.iml" filepath="$PROJECT_DIR$/android/android/prebuilts/sdktools/android.sdktools.zipflinger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intellij-move/intellij-move.main.iml" filepath="$PROJECT_DIR$/intellij-move/intellij-move.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intellij-move/intellij-move.plugin.iml" filepath="$PROJECT_DIR$/intellij-move/intellij-move.plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/android/android-adb/intellij.android.adb.iml" filepath="$PROJECT_DIR$/android/android-adb/intellij.android.adb.iml" />
       <module fileurl="file://$PROJECT_DIR$/android/android-adb/intellij.android.adb.testUtil.iml" filepath="$PROJECT_DIR$/android/android-adb/intellij.android.adb.testUtil.iml" />
       <module fileurl="file://$PROJECT_DIR$/android/android-adb/intellij.android.adb.tests.iml" filepath="$PROJECT_DIR$/android/android-adb/intellij.android.adb.tests.iml" />
@@ -1353,6 +1355,11 @@
       <module fileurl="file://$PROJECT_DIR$/plugins/kotlin/util/test-generator-api/kotlin.util.test-generator-api.iml" filepath="$PROJECT_DIR$/plugins/kotlin/util/test-generator-api/kotlin.util.test-generator-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugins/kotlin/util/test-generator-fe10/kotlin.util.test-generator-fe10.iml" filepath="$PROJECT_DIR$/plugins/kotlin/util/test-generator-fe10/kotlin.util.test-generator-fe10.iml" />
       <module fileurl="file://$PROJECT_DIR$/plugins/kotlin/util/test-generator-fir/kotlin.util.test-generator-fir.iml" filepath="$PROJECT_DIR$/plugins/kotlin/util/test-generator-fir/kotlin.util.test-generator-fir.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pontem/pontem.ide.iml" filepath="$PROJECT_DIR$/pontem/pontem.ide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pontem/build/pontem.ide.build.iml" filepath="$PROJECT_DIR$/pontem/build/pontem.ide.build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pontem/ide/pontem.ide.customization.iml" filepath="$PROJECT_DIR$/pontem/ide/pontem.ide.customization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pontem/ide/impl/pontem.ide.impl.iml" filepath="$PROJECT_DIR$/pontem/ide/impl/pontem.ide.impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pontem/pontem.ide.main.iml" filepath="$PROJECT_DIR$/pontem/pontem.ide.main.iml" />
     </modules>
   </component>
 </project>

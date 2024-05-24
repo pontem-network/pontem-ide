@@ -27,6 +27,16 @@
       <entry name="!*.iml" />
       <entry name="!*.gant" />
     </wildcardResourcePatterns>
+    <bytecodeTargetLevel>
+      <module name="intellij-move" target="17" />
+      <module name="intellij-move.main" target="17" />
+      <module name="intellij-move.plugin" target="17" />
+      <module name="intellij-move.plugin.main" target="17" />
+      <module name="intellij-move.plugin.test" target="17" />
+      <module name="intellij-move.test" target="17" />
+      <module name="org.move.intellij-move.main" target="17" />
+      <module name="org.move.intellij-move.test" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="EclipseCompilerSettings">
     <option name="GENERATE_NO_WARNINGS" value="true" />
